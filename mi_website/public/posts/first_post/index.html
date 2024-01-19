@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Creando un Entorno Virtual en Python para un Desarrollo Aislado</title>
+    <meta name="description" content="">
+    <meta name="keywords" content='blog, Python, Software Development, Virtual Environment, Virtualenv, Programming, Web Development, Technology, Python Programming, Dependency Management, Programming Tutorials, Environment Configuration, Technological Solutions, Isolated Development, Pip, Development Tools'>
+
+    <meta property="og:url" content="http://example.org/posts/first_post/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Creando un Entorno Virtual en Python para un Desarrollo Aislado">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://example.org/path/to/image.png">
+    <meta property="og:image:secure_url" content="http://example.org/path/to/image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Creando un Entorno Virtual en Python para un Desarrollo Aislado">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:domain" content="http://example.org/posts/first_post/">
+    <meta property="twitter:url" content="http://example.org/posts/first_post/">
+    <meta name="twitter:image" content="http://example.org/path/to/image.png">
+
+    
+    <link rel="canonical" href="http://example.org/posts/first_post/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.f5bf6b76a77e7b3bcdd13bf08b81401d71e52b12b776c24359f51080bff91845.js" integrity="sha256-9b9rdqd&#43;ezvN0Tvwi4FAHXHlKxK3dsJDWfUQgL/5GEU="></script>
+
+    
+    
+</head>
+<head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/stackoverflow-dark.min.css">
+            <style>
+                 
+                .hljs {
+                    background: #272822;
+                    
+                }
+            </style>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://example.org/">Ctrl&#43;Fix Tech!</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://example.org/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://example.org/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com"><span data-feather='github'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://example.org/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://example.org/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Creando un Entorno Virtual en Python para un Desarrollo Aislado</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">January 19, 2024
+        
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="http://example.org/tags/blog">blog</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/python">Python</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/software-development">Software Development</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/virtual-environment">Virtual Environment</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/virtualenv">Virtualenv</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/programming">Programming</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/web-development">Web Development</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/technology">Technology</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/python-programming">Python Programming</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/dependency-management">Dependency Management</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/programming-tutorials">Programming Tutorials</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/environment-configuration">Environment Configuration</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/technological-solutions">Technological Solutions</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/isolated-development">Isolated Development</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/pip">Pip</a></li>
+        
+            <li class="post-tag"><a href="http://example.org/tags/development-tools">Development Tools</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <p>Bienvenido a Ctrl+Fix Tech, donde desentrañamos misterios tecnológicos y proporcionamos soluciones efectivas. En esta primera entrada, aprenderemos paso a paso cómo crear un entorno virtual en Python, una práctica esencial para mantener tus proyectos organizados y aislar las dependencias. ¡Vamos allá!</p>
+<p><a href="/posts/entorno_virtual/">Descubre cómo funciona un entorno virtual</a></p>
+<h3 id="paso-1-instalar-virtualenv">Paso 1: Instalar <code>virtualenv</code></h3>
+<p>Primero, asegúrate de tener <code>virtualenv</code> instalado. Si aún no lo tienes, puedes hacerlo ejecutando el siguiente comando en tu terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install virtualenv
+</span></span></code></pre></div><h3 id="paso-2-crear-un-entorno-virtual">Paso 2: Crear un Entorno Virtual</h3>
+<ol>
+<li>Abre tu terminal y navega al directorio de tu proyecto:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ruta/a/tu/proyecto
+</span></span></code></pre></div><ol start="2">
+<li>Crea un entorno virtual con el siguiente comando:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>virtualenv nombre_del_entorno
+</span></span></code></pre></div><h3 id="paso-3-activar-el-entorno-virtual">Paso 3: Activar el Entorno Virtual</h3>
+<p>En sistemas basados en <strong><code>Unix (Linux/Mac)</code></strong>, activa el entorno virtual con:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source nombre_del_entorno/bin/activate
+</span></span></code></pre></div><p>En <strong><code>Windows</code></strong>, usa:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nombre_del_entorno<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate
+</span></span></code></pre></div><p>Verás que el prompt de tu terminal cambia, indicando que estás dentro del entorno virtual.</p>
+<h3 id="paso-4-instalar-dependencias">Paso 4: Instalar Dependencias</h3>
+<p>Dentro del entorno virtual, puedes instalar las bibliotecas y paquetes que necesites usando <code>pip</code> sin afectar tu sistema global. Por ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip install nombre_del_paquete
+</span></span></code></pre></div><h3 id="paso-5-desactivar-el-entorno-virtual">Paso 5: Desactivar el Entorno Virtual</h3>
+<p>Cuando hayas terminado de trabajar en tu proyecto, desactiva el entorno virtual con:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>deactivate
+</span></span></code></pre></div><h3 id="conclusión">Conclusión</h3>
+<p>¡Felicidades! Ahora tienes un entorno virtual de Python configurado y listo para ser utilizado. Esta práctica te permitirá gestionar de manera eficiente las dependencias de tus proyectos y evitar conflictos entre versiones. En futuras entradas, exploraremos más trucos y consejos para potenciar tu desarrollo. ¡Hasta la próxima solución en Ctrl+Fix Tech!</p>
+<h3 id="ejemplo-de-ejecucion">Ejemplo de ejecucion</h3>
+<pre tabindex="0"><code>PS C:\Users\CTRLFIX&gt; cd .\Desktop\ # Cambia al directorio Desktop
+PS C:\Users\CTRLFIX\Desktop&gt; cd .\pruebasenv\ # Cambia al directorio pruebasenv dentro de Desktop
+PS C:\Users\CTRLFIX\Desktop\pruebasenv&gt; virtualenv testing # Crea un entorno virtual llamado &#39;testing&#39;
+PS C:\Users\CTRLFIX\Desktop\pruebasenv&gt; .\testing\Scripts\activate # Activa el entorno virtual &#39;testing&#39;
+# nota como el promt cambia a tener el nombre de el entorno virtual (testing en este caso por que asi se nombro al momento de su creacion)
+(testing) PS C:\Users\CTRLFIX\Desktop\pruebasenv&gt; pip install paramiko # Instala la biblioteca &#39;paramiko&#39; en el entorno virtual
+Collecting paramiko
+Using cached paramiko-3.4.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting bcrypt&gt;=3.2 (from paramiko)
+Using cached bcrypt-4.1.2-cp39-abi3-win_amd64.whl.metadata (9.8 kB)
+Collecting cryptography&gt;=3.3 (from paramiko)
+Downloading cryptography-41.0.7-cp37-abi3-win_amd64.whl.metadata (5.3 kB)
+Collecting pynacl&gt;=1.5 (from paramiko)
+Downloading PyNaCL-1.5.0-cp36-abi3-win_amd64.whl (212 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 212.1/212.1 kB 323.0 kB/s eta 0:00:00
+Collecting cffi&gt;=1.12 (from cryptography&gt;=3.3-&gt;paramiko)
+Downloading cffi-1.16.0-cp310-cp310-win_amd64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi&gt;=1.12-&gt;cryptography&gt;=3.3-&gt;paramiko)
+Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 45.7 kB/s eta 0:00:00
+Using cached paramiko-3.4.0-py3-none-any.whl (225 kB)
+Using cached bcrypt-4.1.2-cp39-abi3-win_amd64.whl (158 kB)
+Downloading cryptography-41.0.7-cp37-abi3-win_amd64.whl (2.7 MB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 64.3 kB/s eta 0:00:00
+Downloading cffi-1.16.0-cp310-cp310-win_amd64.whl (181 kB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.6/181.6 kB 49.6 kB/s eta 0:00:00
+Installing collected packages: pycparser, bcrypt, cffi, pynacl, cryptography, paramiko
+Successfully installed bcrypt-4.1.2 cffi-1.16.0 cryptography-41.0.7 paramiko-3.4.0 pycparser-2.21
+(testing) PS C:\Users\CTRLFIX\Desktop\pruebasenv&gt; deactivate # Desactiva el entorno virtual &#39;testing&#39;
+# Aqui el promt vuelve a su estado normal y se sabe por que le nombre del entorno virtual desaparecio
+PS C:\Users\CTRLFIX\Desktop\pruebasenv&gt;
+</code></pre>
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+
+    
+    
+    <script>
+        let backToTopButton = document.getElementById("btt-button");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            smoothScrollToTop();
+        }
+
+        function smoothScrollToTop() {
+            const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if (c > 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, c - c / 8);
+                }
+            };
+            scrollToTop();
+        }
+    </script>
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

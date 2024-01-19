@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Desarrollo de Software on Ctrl&#43;Fix Tech!</title>
+    <link>http://example.org/tags/desarrollo-de-software/</link>
+    <description>Recent content in Desarrollo de Software on Ctrl&#43;Fix Tech!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://example.org/tags/desarrollo-de-software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creando un Entorno Virtual en Python para un Desarrollo Aislado</title>
+      <link>http://example.org/posts/entorno_virtual/</link>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://example.org/posts/entorno_virtual/</guid>
+      <description>Bienvenido a Ctrl+Fix Tech, donde exploramos misterios tecnológicos y proporcionamos soluciones efectivas. En esta entrada, aprenderemos cómo crear un entorno virtual en Python, una práctica esencial para mantener tus proyectos organizados y aislar las dependencias. ¡Vamos allá!&#xA;Paso 1: Instalar virtualenv Primero, asegúrate de tener virtualenv instalado. Si aún no lo tienes, puedes hacerlo ejecutando el siguiente comando en tu terminal:&#xA;pip install virtualenv ### Paso 2: Crear un Entorno Virtual&#xD;1.</description>
+    </item>
+  </channel>
+</rss>
