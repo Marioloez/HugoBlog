@@ -26,7 +26,7 @@ tags:
 
 Bienvenido a Ctrl+Fix Tech, donde desentrañamos misterios tecnológicos y proporcionamos soluciones efectivas. En esta primera entrada, aprenderemos paso a paso cómo crear un entorno virtual en Python, una práctica esencial para mantener tus proyectos organizados y aislar las dependencias. ¡Vamos allá!
 
-[Descubre cómo funciona un entorno virtual](/posts/entorno_virtual/)
+[Descubre cómo funciona un entorno virtual de Python](/posts/entorno_virtual/)
 
 ### Paso 1: Instalar `virtualenv`
 
